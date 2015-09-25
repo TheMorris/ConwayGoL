@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 std::string getResourcePath(const std::string &subDir = ""){
 	#ifdef _WIN32
