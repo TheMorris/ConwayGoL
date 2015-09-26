@@ -13,3 +13,7 @@ tags
 .settings/
 .cproject
 .project
+.clang_complete
+.syntastic_cpp_config
+
+
