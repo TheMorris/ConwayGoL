@@ -15,6 +15,6 @@ class Main{
 		void drawGrid();
 		void update(double& delay);
 		
-		
 };
+
 #endif
