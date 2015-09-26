@@ -3,12 +3,6 @@
 .*.*.??
 bin/
 tags
-*.cpp
-*.c
-*.h
-*.hh
-*.hpp
-*.o
 *.temp
 .settings/
 .cproject
