@@ -2,10 +2,11 @@
 #include <World.h>
 
 void Main::doRenderCycle(double& updateDelay){
-	
+	this->drawGrid();
+	this->update(updateDelay);
 }
 
-void Main::update(double& updateDelay){
+void Main::update(double& delay){
 
 }
 
