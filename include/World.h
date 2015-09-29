@@ -4,6 +4,7 @@
 #include "res_path.h"
 #include "Main.h"
 #include <vector>
+#include <list>
 
 class World{
 	
@@ -17,6 +18,8 @@ class World{
 	private:
 		void nextPopulation();	
 		std::vector<std::vector<bool> > worldData;
+		struct Point;
 };
+
 
 #endif
