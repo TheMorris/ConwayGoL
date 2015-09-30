@@ -19,6 +19,7 @@ class World{
 		void nextPopulation();	
 		std::vector<std::vector<bool> > worldData;
 		struct Point;
+		bool neighbourCheck(unsigned int x, unsigned int y) const;
 };
 
 
