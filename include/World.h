@@ -2,7 +2,6 @@
 #define WORLD_H
 
 #include "res_path.h"
-#include "Main.h"
 #include <vector>
 #include <list>
 

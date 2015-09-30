@@ -31,9 +31,9 @@ void World::drawPopulation(SDL_Window& window){
 
 //Add option for c++11 compilance.
 void World::clear(){
-	for(std::vector<bool> vec : this->worldData){
-		for(bool b : vec){
-			b = false;
+	for (unsigned int x = 0; x < worldData.size(); x++){
+		for (unsigned int y = 0 ; y < worldData[x].size() ; y++){
+			worldData[x][y] == false;		
 		}
 	}
 }

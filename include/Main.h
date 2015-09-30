@@ -12,8 +12,9 @@ class Main{
 		void windowCloseAndDump();
 		Main();
 		~Main();
+
 	private:
-		World world;
+		World world();
 		SDL_Rect* rect = NULL;
 		SDL_Renderer* renderer = NULL;
 		SDL_Window* window = NULL;
