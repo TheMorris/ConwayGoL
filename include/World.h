@@ -4,6 +4,9 @@
 #include "res_path.h"
 #include <vector>
 #include <list>
+#include <SDL.h>
+
+
 
 class World{
 	
