@@ -4,7 +4,7 @@
 #include "res_path.h"
 #include <vector>
 #include <list>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 
 

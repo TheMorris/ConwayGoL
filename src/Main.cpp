@@ -36,24 +36,33 @@ void Main::drawGrid(){
 
 bool Main::init(){
 	if(SDL_Init(SDL_INIT_VIDEO) < 0){
-		std::cout << "Could not initialize! \n" << std::cerr << SDL_GetError();
+		std::cout << "Could not initialize! \n" << std::cerr << std::endl << SDL_GetError();
 		return false;
 	}
 	else{
 		window = SDL_CreateWindow("Title", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH, WINDOW_HEIGHT, SDL_WINDOW_SHOWN);	
 		renderer = SDL_CreateRenderer(window, 0, SDL_RENDERER_ACCELERATED);
-		return window == nullptr && renderer == nullptr;
+		return renderer != nullptr && window != nullptr;
 	}
 	
 }
 
 
 int main(){
+	SDL_Event e;
 	Main game(800, 400, 50);
 	if(!game.init()){
 		std::cout << "Exit with error code one!";
 		return -1;
 	}
 	std::cout << "Test!" << std::endl;
+	bool isRunning = true;
+	while(isRunning){
+		if(SDL_PollEvent(&e)){
+			if(e.type == SDL_QUIT){
+				isRunning = false;
+			}
+		}
+	}
 	return 0;
 }

@@ -1,10 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include <iostream>
-#include "World.h"
+//#include "World.h"
 
+class World;
 class Main{
 	public:
 		void doRenderCycle(double& updateDelay);
